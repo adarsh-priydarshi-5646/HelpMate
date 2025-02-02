@@ -78,7 +78,7 @@ async function sendMessage() {
 }
 
 async function generateAIResponse(userChatElement, userMessage) {
-  const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyArSF6fG2O1N3cIfUSZN07f-wN0W7KgMUw";
+  const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=your_api_key";
   
   // Simulate typing indicator
   let aiChatElement = document.createElement("div");
