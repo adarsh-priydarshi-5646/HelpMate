@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <title>HelpMate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1>HelpMate.</h1>
+      <div class="new-chat" onclick="createNewChat()">+ New Chat</div>
+      <div class="past-chats" id="past-chats"></div>
+    </div>
+    <div class="main" id="main">
+      <h2>Hi, I'm <span>HelpMate.</span></h2>
+      <div class="message-area" id="message-area"></div>
+      <!-- Message display area -->
+    </div>
+
+    <!-- Input area -->
+    <div class="chat-input">
+      <button class="upload-btn" onclick="triggerFileUpload()">📎</button>
+      <input
+        type="text"
+        id="chat-input"
+        placeholder="Message DeepSeek"
+        onkeypress="handleKeyPress(event)"
+      />
+      <div id="file-preview-container"></div>
+      <button onclick="sendMessage()">➤</button>
+      <button class="chat-stop">⏹</button>
+    </div>
+
+    <input
+      type="file"
+      id="file-input"
+      style="display: none"
+      onchange="handleFileUpload(event)"
+    />
+
+    <script src="front.js"></script>
+    <script src="backe.js"></script>
+  </body>
+</html>
